@@ -14,7 +14,3 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-
-include(
-    ":basic-tests",
-)
