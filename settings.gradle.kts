@@ -17,4 +17,5 @@ dependencyResolutionManagement {
 
 include(
     ":basic-tests",
+    ":bdd",
 )

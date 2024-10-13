@@ -8,6 +8,7 @@ val projectVersion: String = libs.versions.kotest.intro.get()
 val detektId: String = libs.plugins.detekt.get().pluginId
 val detektFormattingModule = libs.detekt.formatting.get().module.toString()
 val detektFormattingVersion = libs.detekt.formatting.get().version
+val kotestBundle = libs.bundles.kotest
 
 allprojects {
     group = projectGroup
@@ -20,5 +21,6 @@ subprojects {
 
     dependencies {
         detektPlugins("$detektFormattingModule:$detektFormattingVersion")
+        testImplementation(kotestBundle)
     }
 }
